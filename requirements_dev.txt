@@ -1,5 +1,4 @@
 Django==2.0.8
-pytz==2018.5
-Django==2.0.8
 djangorestframework==3.8.2
+musicbrainzngs==0.6
 pytz==2018.5

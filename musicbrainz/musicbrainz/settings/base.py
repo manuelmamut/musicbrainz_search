@@ -22,11 +22,6 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 # SECURITY WARNING: keep the secret key used in production secret!
 SECRET_KEY = 'fhno5hf$(*a-q19gham2dt+l3l=@ik0w076+%2%_^sv-rtua$8'
 
-# SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
-
-ALLOWED_HOSTS = ['104.131.185.138']
-
 
 # Application definition
 
@@ -72,15 +67,7 @@ TEMPLATES = [
 WSGI_APPLICATION = 'musicbrainz.wsgi.application'
 
 
-# Database
-# https://docs.djangoproject.com/en/2.0/ref/settings/#databases
 
-DATABASES = {
-    'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
-    }
-}
 
 
 # Password validation
@@ -120,3 +107,14 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/2.0/howto/static-files/
 
 STATIC_URL = '/static/'
+
+
+PROJECT_APP_PATH = os.path.dirname(os.path.abspath(__file__))
+
+PROJECT_APP = os.path.basename(PROJECT_APP_PATH)
+
+PROJECT_ROOT = BASE_DIR
+
+REST_FRAMEWORK_EXTENSIONS = {
+    'DEFAULT_CACHE_ERRORS': False
+}
