@@ -19,3 +19,5 @@ class albumTypeReleaseGroupSerializer(serializers.Serializer):
     albums = releaseGroupSerializer(many = True)
     next_offset = serializers.IntegerField()
     showing = serializers.CharField()
+    release_group_count = serializers.IntegerField()
+    date = serializers.DateTimeField()
