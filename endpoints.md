@@ -58,15 +58,15 @@ Use this to get the Release Groups for an Artist. You can use pagination with th
  
 * **Error Response:**
 
-  <_Most endpoints will have many ways they can fail. From unauthorized access, to wrongful parameters etc. All of those should be liste d here. It might seem repetitive, but it helps prevent assumptions from being made where they should be._>
+  * **Code:** 404 NotFound <br />
+    **Content:** `{ detail : "Not found" }`
+    You will get this error when an artist_id is not found
+    
 
-  * **Code:** 401 UNAUTHORIZED <br />
-    **Content:** `{ error : "Log in" }`
-
-  OR
-
-  * **Code:** 422 UNPROCESSABLE ENTRY <br />
-    **Content:** `{ error : "Email Invalid" }`
+  * **Code:** 400 <br />
+    **Content:** `{"Request missing Artist ID":"You must pass an artist_id in your request"}`
+    
+ 
 
 * **Sample Call:**
 
