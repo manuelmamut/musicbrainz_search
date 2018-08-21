@@ -30,7 +30,7 @@ Use this to get the Release Groups for an Artist. You can use pagination with th
 * **Success Response:**
 
   * **Code:** 200 <br />
-    **Content:** `{
+    **Content:** ```{
     "albums": [
         {
             "id": "0da580f2-6768-498f-af9d-2becaddf15e0",
@@ -43,7 +43,7 @@ Use this to get the Release Groups for an Artist. You can use pagination with th
     "showing": "1-1",  
     "release_group_count": 577,  
     "date": "2018-08-21T18:24:06.108140Z"  
-    }`
+    }```
  
 * **Error Response:**
 
