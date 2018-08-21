@@ -22,3 +22,5 @@
 
   You can run the tests by going to the project folder 'musicbrainz' and run  
   `python manage.py test --settings=musicbrainz.settings.<environment>`
+  
+## Endpoints
