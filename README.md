@@ -7,7 +7,8 @@
 - Once in your virtualenv run `pip install -r requirements_<environment>_.txt`  
   (so far we have 'dev' an 'qa' environments)
 
-- To run the project `python manage.py runserver <your_host>:<your_port> --settings=musicbrainz.settings.<environment>`
+- To run the project go to the project folder 'musicbrainz' and run  
+`python manage.py runserver <your_host>:<your_port> --settings=musicbrainz.settings.<environment>`
 
 
 ## Caching
