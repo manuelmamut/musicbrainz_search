@@ -13,9 +13,10 @@
 ## Caching
 
    We use LocalMemCached for development environment and Memcache for qa environment.  
-   You must install memcache in order to be able to cache on QA env.  
+   You must install memcache in order to be able to cache on QA env, or you can change the 
+   qa.py in the settings folder.
 
-   Probably it could be already running if you are working of linux, you could check it  
+   Probably it could be running already. If you are working of linux, you could check it  
    by running `netstat -antlp` on bash and search for a process listening on 127.0.0.1:11211
 
 ## Tests
